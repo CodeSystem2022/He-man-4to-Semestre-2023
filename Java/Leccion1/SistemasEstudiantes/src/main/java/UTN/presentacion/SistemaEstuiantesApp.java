@@ -22,4 +22,18 @@ public class SistemaEstudianesApp {
             }
         }//Fin while
     }//Fin main
+
+ private static void mostrarMenu(){
+        System.out.print("""
+                ******* Sistema de Estudiante *******
+                1. Listar Estudiantes
+                2. Buscar Estudiantes
+                3. Agregar Estudiante
+                4. Modificar Estudiante
+                5. Eliminar Estudiante
+                6. Salir
+                Elige una opcion:
+                """);
+    }
+
 }//Fin clase
