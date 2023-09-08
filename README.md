@@ -52,7 +52,7 @@
     </tr>
     <tr>
       <td>SEMANA 3</td>
-      <td>Fernando Cala</td>
+      <td>FERNANDO CALA</td>
     </tr>
     <tr>
       <td>SEMANA 4</td>
