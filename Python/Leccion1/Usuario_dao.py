@@ -1,5 +1,5 @@
 import logging
-
+#dao
 from CursorDelPool import CursorDelPool
 import usuario
 

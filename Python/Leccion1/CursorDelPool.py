@@ -1,6 +1,6 @@
 from logger_base import log
 from Conexion import Conexion
-
+#cursor
 
 class CursorDelPool:
     def __init__(self):
