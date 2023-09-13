@@ -15,4 +15,6 @@ const displayCart = () => {
     modalTitle.innerText = "cart";
     modalTitle-className = "modal-title";
     modalHeader.append("modalTitle");
+
+    modalContainer.append(modalHeader);
 }
