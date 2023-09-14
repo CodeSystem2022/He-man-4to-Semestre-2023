@@ -64,3 +64,14 @@
   display: none;
 
 }
+
+.modal-close {
+	float: right;
+	cursor: pointer;
+}
+  .modal-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+  } 
