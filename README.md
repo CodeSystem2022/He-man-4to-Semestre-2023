@@ -56,6 +56,22 @@
     </tr>
     <tr>
       <td>SEMANA 4</td>
+      <td>FAVIO JAVIER FLORES</td>
+    </tr>
+    <tr>
+      <td>SEMANA 5</td>
+      <td> JUAN MANUEL BRESANOVICH</td>
+    </tr>
+    <tr>
+      <td>SEMANA 6</td>
+      <td>JORGE AGUSTIN, LOYOLA</td>
+    </tr>
+    <tr>
+      <td>SEMANA 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SEMANA 8</td>
       <td></td>
     </tr>
   </table>
