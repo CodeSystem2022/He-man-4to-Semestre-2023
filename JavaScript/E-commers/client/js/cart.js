@@ -26,6 +26,42 @@ const displayCart = () => {
     modalHeader.append("modalTitle");
 
     modalContainer.append(modalHeader);
+
+    //modal body
+    if(cart.length > 0){
+       //aca va tu codigo...
+    
+            const decrese = modalbody.querySelector(".quantity-btn-decrese")
+            decrese.addEventListener("click", ()=>{
+                if(product.quanty !== 1){
+                    product.quanty--;
+                    displayCart();
+                }
+                    displayCartCounter();
+            });
+
+            //aca va tu codigo 
+
+            //delete
+            const deleteProduct = modalbody.querySelector(".delete-product");
+    
+            deleteProduct.addEventListener("click",()=> {
+                deleteCartProduct(product.id)
+            });
+
+    
+        };
+        
+ /*modal footer*/
+ const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0 )
+//aca tambien va tu codigo
+
 }
 
 cartBtn.addEventListener("click", displayCart);
+const deleteCartProduct =(id) =>{
+    const foundid = cart.findIndex((element)=> element.id === id )
+    cart.splice(foundid ,1);
+    displayCart();
+    displayCartCounter();
+};
