@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50e001be-d671-4b7b-9bfc-8b6be42bfb0f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leccion1/SistemasEstudiantes/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Leccion1/SistemasEstudiantes/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leccion2/estudiantes/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/leccion2/estudiantes/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Fernando/Documents/TECNICATURA EN PROGRAMACION 2022-2023/CUARTO SEMESTRE/He-man-4to-Semestre-2023/Java",
+    "last_opened_file_path": "C:/Users/Fernando/Documents/TECNICATURA EN PROGRAMACION 2022-2023/CUARTO SEMESTRE/ProyectosJAVA/Leccion01/estudiantes",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
 }]]></component>
