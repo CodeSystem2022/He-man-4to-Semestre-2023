@@ -13,4 +13,4 @@ print(f'Es de tipo NaN (Not a Number)?: {math.isnan(a)}')
 a = Decimal('nan')
 print(f'Es de tipo NaN(Not a Number)?: {math.isnan(a)}')
 
-#comentario 
+#comentario
