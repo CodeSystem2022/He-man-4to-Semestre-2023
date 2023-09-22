@@ -29,6 +29,35 @@ const displayCart = () => {
 
     //modal body
     if(cart.length > 0){
+    
+    cart.forEach((product) => {
+        const modalbody = document.createElement("div");
+        modalbody.className = "modal-body"
+        modalbody.innerHTML = `
+        <div class="product">
+                <img class="product-img" src="${product.img}" />
+                <div class="product-info">
+                    <h4>${product.productName}</h4>
+                </div>
+            <div class="quantity">
+                <span class="quantity-btn-decrese">-</span>
+                <span class="quantity-input">${product.quanty}</span>
+                <span class="quantity-btn-increse>+</span>
+            </div>
+                <div class="price">${product.price * product.quanty} $</div>
+                <div class="delete-product">❌</div>
+           
+
+
+
+        </div>
+            
+        `;
+
+
+    });
+
+
        //aca va tu codigo...
     
             const decrese = modalbody.querySelector(".quantity-btn-decrese")
@@ -56,7 +85,7 @@ const displayCart = () => {
  const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0 )
 //aca tambien va tu codigo
 
-}
+};
 
 cartBtn.addEventListener("click", displayCart);
 const deleteCartProduct =(id) =>{
