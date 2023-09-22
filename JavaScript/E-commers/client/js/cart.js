@@ -54,6 +54,8 @@ const displayCart = () => {
             
         `;
 
+        modalContainer.append(modalbody);
+
 
     });
 
