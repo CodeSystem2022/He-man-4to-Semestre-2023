@@ -54,7 +54,7 @@ const displayCart = () => {
             
         `;
 
-        modalContainer.append(modalbody);
+        modalContainer.append(modal)
 
 
     });
@@ -84,6 +84,13 @@ const displayCart = () => {
         };
         
  /*modal footer*/
+ const modalFooter = document.createElement("div")
+ modalFooter.className="modal-footer"
+modalFooter.innerHTML = `
+<div class="total-price">Total:)</div>
+`;
+
+modalContainer.append(modalFooter);
  const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0 )
 //aca tambien va tu codigo
 
