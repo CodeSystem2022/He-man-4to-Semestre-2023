@@ -17,7 +17,10 @@ productos.forEach((product) =>{
      content.append(buyButton);
 
     
-     buyButton.addEventListener("click",() => {
+    /* comentario*/
+
+
+    buyButton.addEventListener("click",() => {
         const repeat = cart.some((repeatProduct) => repeatProduct.id === product.id );
 
         if(repeat){
