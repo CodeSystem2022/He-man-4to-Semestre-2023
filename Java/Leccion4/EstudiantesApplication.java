@@ -120,7 +120,7 @@ public class EstudiantesApplication implements CommandLineRunner {
 					logger.info("Estudiante NO encontrado con el id: "+ idEstudiante+nl);
 
 			}
-			
+
 		}//Fin switch
 		return salir;
 	}//Fin metodo ejecutarOpciones
