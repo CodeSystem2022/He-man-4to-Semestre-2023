@@ -68,11 +68,15 @@
     </tr>
     <tr>
       <td>SEMANA 7</td>
-      <td></td>
+      <td>LUCIANO, CORTEZ</td>
     </tr>
     <tr>
       <td>SEMANA 8</td>
-      <td></td>
+      <td>MAURICIO CERDA</td>
+    </tr>
+    <tr>
+      <td>SEMANA 9</td>
+      <td>SEBASTIAN BARROS</td>
     </tr>
   </table>
 </div>
