@@ -1,4 +1,6 @@
+#formato
 #dar formato a un string
+
 
 nombre = 'ariel'
 edad = 28
