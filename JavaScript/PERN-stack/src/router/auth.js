@@ -1,13 +1,14 @@
 import {Router} from "express";
+import {signin, signoup,sigout,profile} from "../controllers/authcontroller.js";
 
 const router = Router();
 
-router.post("/singnin", (req, res) => res.send("ingresando"));
+router.post("/singnin", signin);
 
-router.post("/singnup", (req, res) => res.send("registrando"));
+router.post("/singnup", signup);
 
-router.post("/singout", (req, res) => res.send("Cerrando sesion"));
+router.post("/singout", sigout);
 
-router.post("/profile", (req, res) => res.send("perfil de usuario"));
+router.post("/profile", profile);
 
 export default router;
