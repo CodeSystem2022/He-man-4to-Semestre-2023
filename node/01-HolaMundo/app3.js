@@ -13,6 +13,7 @@ setTimeout(()=>{
 }, 0);
 
 console.log("Fin del programa"); //2
+console.log("termino");
 
 //Cae en un stack de procedimientos y tiene que ejecutar.
 //Todo es sincrono, son instrucciones no bloqueantes.
