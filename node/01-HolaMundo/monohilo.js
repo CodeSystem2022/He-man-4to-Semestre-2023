@@ -15,3 +15,5 @@ setInterval(function() {
 
 console.log("Segunda instruccion");
 
+//En este punto se instala PM2
+//con el comando "npm install -g pm2"
