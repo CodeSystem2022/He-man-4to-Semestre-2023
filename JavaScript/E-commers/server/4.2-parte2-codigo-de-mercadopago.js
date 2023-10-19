@@ -19,8 +19,8 @@ app.get("/", function (req, res) {
 	res.status(200).sendFile("index.html");
 });
 
-app.post("/create_preference", (req, res) => {
-
+app.post("/create_preference", (req, res) => { //Se utiliza para crear una preferencia de pago en MercadoPago
+                                               //basada en los datos proporcionados en el cuerpo de la solicitud
 	let preference = {
 		items: [
 			{
@@ -47,7 +47,8 @@ app.post("/create_preference", (req, res) => {
 		});
 });
 
-app.get('/feedback', function (req, res) {
+app.get('/feedback', function (req, res) { //devuelve información sobre un pago en función de los parámetros
+	                                   //de la consulta en la URL
 	res.json({
 		Payment: req.query.payment_id,
 		Status: req.query.status,
