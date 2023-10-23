@@ -53,7 +53,7 @@ app.get('/feedback', function (req, res) { //devuelve información sobre un pago
 		Payment: req.query.payment_id,
 		Status: req.query.status,
 		MerchantOrder: req.query.merchant_order_id
-	});
+	})+;
 });
 
 app.listen(8080, () => {
