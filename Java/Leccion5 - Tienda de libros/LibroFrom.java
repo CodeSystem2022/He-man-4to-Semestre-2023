@@ -17,7 +17,8 @@ public class LibroFrom extends JFrame{
 	}
 }
 
-private void iniciarForma(){
+private void iniciarForma(){ //El método iniciarForma() inicializa la ventana estableciendo el panel de contenido
+			     //de la ventana en el campo panel.
 	setContentPane(panel);
 	setDefaultCloseOperation(JFrmae.EXIT_ON_CLOSE);
 	setVisible(true);
