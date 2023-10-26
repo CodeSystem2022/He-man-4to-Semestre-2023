@@ -1,5 +1,5 @@
 export const listarTareas =  async (req, res) => {
-    console.log(reg.cookie.token);
+    console.log(req.usuarioId);
     const resultado = await pool.query('SELECT * FROM tareas');
     return res.json(resultado.rows);
 }
