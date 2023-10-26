@@ -14,4 +14,3 @@ public interface ILibroServicio {
     public void eliminarLibro(Libro libro);
 }
 
-
