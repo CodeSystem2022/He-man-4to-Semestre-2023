@@ -20,7 +20,7 @@
 
 :white_check_mark:  [MAURICIO CERDA](https://github.com/MauryCerda) <br>
 
-:white_check_mark:  [SEBASTIAN BARROS](https://github.com/2022sbm) <br>
+:white_check_mark:  [LUCIANO CORTEZ](https://github.com/2022sbm) <br>
 
 
 <div align="center" class="contenedor-imagenes">
