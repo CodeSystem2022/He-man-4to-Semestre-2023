@@ -78,5 +78,13 @@
       <td>SEMANA 9</td>
       <td>SEBASTIAN BARROS</td>
     </tr>
+     <tr>
+      <td>SEMANA 10</td>
+      <td>MATIAS MICHAUX</td>
+    </tr>
+     <tr>
+      <td>SEMANA 11</td>
+      <td>EMMANUEL SBONA</td>
+    </tr>
   </table>
 </div>
