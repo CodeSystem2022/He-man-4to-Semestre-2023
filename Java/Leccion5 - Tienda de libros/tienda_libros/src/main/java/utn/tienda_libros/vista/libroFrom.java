@@ -1,40 +1,31 @@
-package utn.tienda_libros.vista;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import utn.tienda_libros.modelo.Libro;
-import utn.tienda_libros.servicio.LibroServicio;
+package utn.tienda_libro.vista;
+
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 
-@Component
-public class LibroFrom extends JFrame {
-    LibroServicio libroServicio;
-    private JPanel panel;
-    private JTable tablaLibros;
-    private DefaultTableModel tablaModeloLibros;
-    @Autowired
-    public LibroFrom(LibroServicio libroServicio) {
-        this.libroServicio = libroServicio;
-        iniciarForma();
-
-private void iniciarForma() {
-    setContentPane(panel);
-    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    setVisible(true);
-    setSize(900, 700);
-    //  Para obtener las dimensiones de la ventana
-    Toolkit toolkit = Toolkit.getDefaultToolkit();
-    Dimension tamanioPantalla = toolkit.getScreenSize();
-    int x = (tamanioPantalla.width - getWidth() / 2);
-    int y = (tamanioPantalla.height - getHeight() / 2);
-    setLocation(x, y);
+public class LibroFrom extends JFrame{
+      
 }
+   
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
 
-private void createUIComponents() {
-    this.tablaModeloLibros =new DefaultTableModel(0 ,5)
-    String[] cabecera = {"Id", "Libro", "Autor", "Precio", "Existencia"};
-    this.tablaModeloLibros.setColumnIdentifiers(cabecera);
-    // Instanciar el objeto de JTable
-    this.tablaLibros = new JTable(tablaModeloLibros);
-}
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
+
