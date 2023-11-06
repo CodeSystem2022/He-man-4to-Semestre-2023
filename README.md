@@ -20,7 +20,7 @@
 
 :white_check_mark:  [MAURICIO CERDA](https://github.com/MauryCerda) <br>
 
-:white_check_mark:  [SEBASTIAN BARROS](https://github.com/2022sbm) <br>
+:white_check_mark:  [LUCIANO CORTEZ](https://github.com/2022sbm) <br>
 
 
 <div align="center" class="contenedor-imagenes">
@@ -77,6 +77,14 @@
     <tr>
       <td>SEMANA 9</td>
       <td>SEBASTIAN BARROS</td>
+    </tr>
+     <tr>
+      <td>SEMANA 10</td>
+      <td>MATIAS MICHAUX</td>
+    </tr>
+     <tr>
+      <td>SEMANA 11</td>
+      <td>EMMANUEL SBONA</td>
     </tr>
   </table>
 </div>
