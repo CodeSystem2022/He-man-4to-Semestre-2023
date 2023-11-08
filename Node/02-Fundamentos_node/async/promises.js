@@ -14,15 +14,20 @@ function hablar(callbackHablar){
     }, 1000);
 }
 
-function adios(nombre, otrocallback) {
+function adios(nombre) {
+    return new Promise( (resolve, reject) => {
+
+    })
     setTimeout(function() {
         console.log("Adios "+ nombre);
         otrocallback();
     }, 1000);
 }
 
+//Llamamos a la funcion
 console.log("Iniciando el proceso....")
 hola('Ariel')
-    .then((nombre )=>{
-        console.log("terminando el proceso")
+    .then(adios)
+    .then((nombre) => {
+        console.log("terminando el proceso");
     })
