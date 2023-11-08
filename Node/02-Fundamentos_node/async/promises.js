@@ -17,12 +17,14 @@ function hablar(nombre){
 
 function adios(nombre) {
     return new Promise( (resolve, reject) => {
-
-    })
     setTimeout(function() {
-        console.log("Adios "+ nombre);
-        otrocallback();
+        console.log("Adios "+ nombre);}
+        //resolve();
+
+        reject("hay un error");
     }, 1000);
+    });
+
 }
 
 //Llamamos a la funcion
@@ -34,4 +36,8 @@ hola('Ariel')
     .then(adios)
     .then((nombre) => {
         console.log("terminando el proceso");
+    })
+    .catch(error => {
+        console.log("Ha habido un error:");
+        console.log(error);
     })
