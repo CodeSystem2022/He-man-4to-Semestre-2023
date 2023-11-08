@@ -3,9 +3,13 @@ import morgan from "morgan";
 import tareasRouters from "./router/tareasrouters.js"
 import auth from "./router/auth.js";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 const app = express();
 //Middlewares
 app.use(morgan("dev"));
+app.use(cors(
+    origin: "http://localhost:5173",
+));
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
