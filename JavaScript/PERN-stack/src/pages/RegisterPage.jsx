@@ -1,12 +1,19 @@
 import { Button, Card, Input } from "../components/ui"; //importamos todo en una línea
 import { useForm } from 'react-hook-form';
+import {Link, useNavigate} from "react-router-dom";
+import {useAuth} from "../context/AuthContext";
+
+
 
 function RegisterPage() {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const onSubmit = handleSubmit((data) => {
-    console.log(data);
+  const{signup}= useAuth();
+
+  const onSubmit = handleSubmit(async(data) => {
+    await signup(data);
+    navigate("/perfil");
   });
 
   // console.log(errors); //muestra los errores que tiene
