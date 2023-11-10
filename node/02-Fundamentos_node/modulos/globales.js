@@ -7,11 +7,13 @@ console.log();
 console.error();
 
 //Ejecutar un codigo despues de un intervalo de tiempo
-setTimeout(() => {});
+//setTimeout(() => {});
 
 //Ejecutar un codigo cada intervalo de tiempo
-setInterval(() => {});
+//setInterval(() => {});
 
 //Da prioridad de ejecucion a una funcion asincronica
-setImmdiate(() => {});
+//setImmdiate(() => {});
+
+console.log(setInterval);
 
