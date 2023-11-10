@@ -76,7 +76,7 @@
     </tr>
     <tr>
       <td>SEMANA 9</td>
-      <td>SEBASTIAN BARROS</td>
+      <td>LUCIANO CORTEZ</td>
     </tr>
      <tr>
       <td>SEMANA 10</td>
