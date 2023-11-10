@@ -1,6 +1,6 @@
-<div id="header" align="center">
-  <img style="width: 700px" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWpzczBkdXdqZWNra2Y3enl2bW02dXZqN2IxOG5tbGNjcmtsaTFpZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EFWRgGrN4kYIjWCbo0/giphy.gif">
-</div>
+ <div>
+    <img src="https://raw.githubusercontent.com/MatiasMichaux98/ecomercedos/master/E-Heman/front/img/fotor-ai-2023110713029.jpg" alt="">
+  </div>
 
   <h1>INTEGRANTES:</h1>
 
