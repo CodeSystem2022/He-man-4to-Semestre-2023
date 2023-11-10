@@ -2,6 +2,7 @@ package utn.tienda_libros.vista;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.w3c.dom.events.MouseEvent;
 
 import utn.tienda_libros.modelo.Libro;
 import utn.tienda_libros.servicio.LibroServicio;
@@ -15,6 +16,7 @@ public class LibroFrom extends JFrame {
     LibroServicio libroServicio;
     private JPanel panel;
     private JTable tablaLibros;
+    private JTextField idTexto;  //atributo de clase
     private JTextField libroTexto;
     private JTextField autorTexto;
     private JTextField precioTexto;
@@ -31,8 +33,15 @@ public class LibroFrom extends JFrame {
         this.libroServicio = libroServicio;
         iniciarForma();
         agregarButton.addActionListener(e -> agregarLibro());
-        modificarButton.addActionListener(e -> modificarLibro());
-        eliminarButton.addActionListener( e -> eliminarLibro());
+        
+
+     tablaLibros.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                cargarLibroSeleccionado();
+            }
+        });
     }
 
     private void iniciarForma() {
@@ -72,7 +81,14 @@ public class LibroFrom extends JFrame {
         limpiarFormulario();
         listarLibros();
     }
-
+    
+    private void cargarLibroSeleccionado(){
+        //Los indices de las columnas inician en 0
+        var renglon = tablaLibros.getSelectedRow(); //permite saber que renglón se presionó dentro del formulario
+        if(renglon != -1){
+            String idLibro = tablaLibros.getModel().getValueAt(renglon, 0).toString(); //convertimos el valor de la columna 0 a un String
+        }
+    }
     private void limpiarFormulario(){
         libroTexto.setText("");
         autorTexto.setText("");
@@ -82,6 +98,9 @@ public class LibroFrom extends JFrame {
 
 
     private void createUIComponents() {
+         //Creamos un id oculto de tipo texto para la tabla libro
+         idTexto = new JTextField(""); //le pasamos una cadena vacía
+         idTexto.setVisible(false); //NO será visible en el formulario
         this.tablaModeloLibros = new DefaultTableModel(0, 5);
         String[] cabecera = {"Id", "Libro", "Autor", "Precio", "Existencias"};
         this.tablaModeloLibros.setColumnIdentifiers(cabecera);
