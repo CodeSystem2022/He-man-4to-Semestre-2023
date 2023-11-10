@@ -86,5 +86,13 @@
       <td>SEMANA 11</td>
       <td>EMMANUEL SBONA</td>
     </tr>
+     <tr>
+      <td>SEMANA 12</td>
+      <td>FERNANDO CALA</td>
+    </tr>
+     <tr>
+      <td>SEMANA 13</td>
+      <td>FERNANDO CALA</td>
+    </tr>
   </table>
 </div>
