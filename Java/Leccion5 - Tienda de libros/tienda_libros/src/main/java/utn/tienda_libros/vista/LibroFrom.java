@@ -35,13 +35,16 @@ public class LibroFrom extends JFrame {
         agregarButton.addActionListener(e -> agregarLibro());
         
 
-     tablaLibros.addMouseListener(new MouseAdapter() {
+        tablaLibros.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 cargarLibroSeleccionado();
             }
         });
+
+        modificarButton.addActionListener(e -> modificarLibro());
+
     }
 
     private void iniciarForma() {
@@ -89,6 +92,32 @@ public class LibroFrom extends JFrame {
             String idLibro = tablaLibros.getModel().getValueAt(renglon, 0).toString(); //convertimos el valor de la columna 0 a un String
         }
     }
+
+    private void modificarLibro(){
+        if(this.idTexto.equals("")){
+            mostrarMensaje("Debe seleccionar un registro en la tabla");
+        }
+        else{
+            // Verificamos que el nombre del libro no se nulo
+            if(libroTexto.getText().equals("")){
+                mostrarMensaje("Digite el nombre del libro...");
+                libroTexto.requestFocusInWindow();
+                return;
+            }
+            // Llenamos el objeto libro a actualizar
+            int idLibro = Integer.parseInt(idTexto.getText());
+            var nombreLibro = libroTexto.getText();
+            var autor = autorTexto.getText();
+            var precio = Double.parseDouble(precioTexto.getText());
+            var existencias = Integer.parseInt(existenciasTexto.getText());
+            var libro = new Libro(idLibro,nombreLibro,autor,precio,existencias);
+            libroServicio.guardarLibro(libro);
+            mostrarMensaje("Se modifico el libro...");
+            limpiarFormulario();
+            listarLibros();
+        }
+    }
+
     private void limpiarFormulario(){
         libroTexto.setText("");
         autorTexto.setText("");
