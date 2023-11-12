@@ -76,7 +76,7 @@
     </tr>
     <tr>
       <td>SEMANA 9</td>
-      <td>SEBASTIAN BARROS</td>
+      <td>LUCIANO CORTEZS</td>
     </tr>
      <tr>
       <td>SEMANA 10</td>
@@ -88,7 +88,7 @@
     </tr>
      <tr>
       <td>SEMANA 12</td>
-      <td>FERNANDO CALA</td>
+      <td>SEBASTIAN BARROS</td>
     </tr>
      <tr>
       <td>SEMANA 13</td>
